@@ -10,7 +10,7 @@ class UI{
             <div class="row>
                 <div class="col-md-3">
                     <img class="img-fluid mb-3" src="${user.avatar_url}" alt="img"></img>
-                    <a href="${user.html_url}" target="_blank" class="btn btn-primary btn-block mb-4">View Profile</a>
+                    <a href="${user.html_url}" target="_blank" class="btn btn-primary btn-block mb-4" style="margin: 0 auto;width: 50%;">View Profile</a>
                 </div>
                 <div class="col-md-12" style="text-align:center;">
                     <span class="badge badge-primary mb-2 mr-4"><b>Public Repo :</b> ${user.public_repos}</span>
