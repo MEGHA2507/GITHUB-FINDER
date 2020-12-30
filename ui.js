@@ -20,7 +20,7 @@ class UI{
                     <br><br>
                     <ul class="list-group" style="text-align:left;">
                         <li class="list-group-item"><b>Company :</b> ${user.company}</li>
-                        <li class="list-group-item"><b>Website/ Blog :</b> ${user.blog}</li>
+                        <li class="list-group-item"><b>Website/ Blog :</b> <a href="${user.blog}">${user.blog}</a></li>
                         <li class="list-group-item"><b>Location :</b> ${user.location}</li>
                         <li class="list-group-item"><b>Member Since :</b> ${user.created_at}</li>
                     </ul>
@@ -50,8 +50,8 @@ class UI{
         searchContainer.insertBefore(div, search);
 
         setTimeout(function(){
-           this.clearAlert.remove();
-        // div.remove();
+        //    this.clearAlert.remove();
+        div.remove();
         }, 3000);
     }
 
@@ -75,9 +75,9 @@ class UI{
                             <a href="${repo.html_url}" target="_blank">${repo.name}</a>
                         </div>
                         <div class="col-md-6">
-                            <span class="badge badge-primary">Stars : ${repo.stargazers_count}</span>
-                            <span class="badge badge-secondary">Watchers : ${repo.watchers_count}</span>
-                            <span class="badge badge-success">Forks : ${repo.forms_count}</span>
+                            <span class="badge badge-primary mr-4">Stars : ${repo.stargazers_count}</span>
+                            <span class="badge badge-secondary mr-4">Watchers : ${repo.watchers_count}</span>
+                            <span class="badge badge-success mr-4">Forks : ${repo.forms_count}</span>
                         </div>
                     </div>
                 </div>
